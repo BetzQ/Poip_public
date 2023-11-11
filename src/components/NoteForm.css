@@ -1,0 +1,94 @@
+.note-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 0.5em;
+}
+
+.note-container input[type='text'] {
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.note-content {
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.note-content textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.cancel,
+.back,
+.post {
+  margin-top: 0.5em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 7, 7);
+}
+.back {
+  color: rgb(0, 139, 0);
+}
+.post {
+  color: rgb(0, 81, 255);
+}
+.cancel:hover,
+.back:hover,
+.post:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .note-container {
+    width: 89%;
+  }
+}
+.publish:hover {
+  background: rgba(128, 128, 128, 0.4);
+  color: black;
+  box-shadow: -1px 1px 1px #0073e6, -2px 2px 1px #b300b3, -3px 3px 1px #ff1493;
+  animation: moveShadow 3s linear infinite;
+}
+.publish {
+  margin-top: 0.5em;
+  border: none;
+  border-radius: 5em;
+  padding: 0.8em 1.5em;
+  cursor: pointer;
+  background: gray;
+  color: white;
+  transition: 0.5s;
+}
+
+@keyframes moveShadow {
+  0%,
+  100% {
+    box-shadow: 1px 1px 1px green, 2px 2px 1px greenyellow, 3px 3px 1px yellow;
+  }
+  25% {
+    box-shadow: 1px -1px 1px green, 2px -2px 1px greenyellow,
+      3px -3px 1px yellow;
+  }
+  50% {
+    box-shadow: -1px -1px 1px green, -2px -2px 1px greenyellow,
+      -3px -3px 1px yellow;
+  }
+  75% {
+    box-shadow: -1px 1px 1px green, -2px 2px 1px greenyellow,
+      -3px 3px 1px yellow;
+  }
+}

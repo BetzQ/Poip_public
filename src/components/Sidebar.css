@@ -1,0 +1,17 @@
+.sidebar li {
+  list-style-type: none;
+  width: 100%;
+}
+.sidebar li p {
+  transition: 0.3s;
+  width: 20%;
+  border-bottom: 1px solid rgba(255, 255, 0, 0);
+}
+.sidebar li:hover {
+  cursor: pointer;
+}
+.sidebar li:hover p {
+  border-bottom: 1px solid;
+  border-color: inherit;
+  width: 100%;
+}
